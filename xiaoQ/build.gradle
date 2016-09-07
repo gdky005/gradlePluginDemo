@@ -3,7 +3,7 @@ version '1.0-SNAPSHOT'
 
 apply plugin: 'groovy'
 apply plugin: 'maven'
-//apply plugin: 'wq'
+apply plugin: 'wq'
 
 
 dependencies {
