@@ -1,0 +1,20 @@
+group 'WQ'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+apply plugin: 'maven'
+//apply plugin: 'wq'
+
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('../../repo'))
+        }
+    }
+}
